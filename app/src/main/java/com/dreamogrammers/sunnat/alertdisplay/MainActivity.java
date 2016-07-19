@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends MotherClass implements View.OnClickListener {
 
     private Button buttonSimpleToast, buttonSimpleSnackbar, buttonActionCallback, buttonCustomSnackbar;
-    public CoordinatorLayout coordinatorLayout;
+    private CoordinatorLayout coordinatorLayout;
     FloatingActionButton floatingactionbutton;
 
     @Override
@@ -87,7 +87,6 @@ public class MainActivity extends MotherClass implements View.OnClickListener {
                                 subSnackbar.show();
                             }
                         });
-
 
                 // Changing action button text color
                 CustomSnackbar.setActionTextColor(Color.RED);

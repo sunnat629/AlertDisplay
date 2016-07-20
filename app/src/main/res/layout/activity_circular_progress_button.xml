@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circular_progress_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.dreamogrammers.sunnat.alertdisplay.CircularProgressButton">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <Button
+            android:id="@+id/buttonCircularProgressAlert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="showProgressDialog"
+            android:text="@string/circular_progress_alert"
+            android:theme="@style/MyButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/circular_progress" />
+
+            <ProgressBar
+                android:id="@+id/CircularProgressDemo"
+                style="@style/Theme.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:theme="@style/CircularProgress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!--This is a 3rd party libs, please check the build.gradle
+    to see the lips name-->
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/CustomCircularProgressbar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:cpb_background_progressbar_color="@color/colorButton"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progressbar_color="@color/colorPrimaryDark"
+                app:cpb_progressbar_width="10dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarCProgressDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/border"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/border"
+                android:layout_below="@+id/shape"
+                android:layout_toEndOf="@+id/border"
+                android:layout_toRightOf="@+id/border"
+                android:max="100"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <!--This is a 3rd party libs, please check the build.gradle
+                      to see the lips name-->
+            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                android:id="@+id/CProgressDialogwithImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/mylogo"
+                app:cfl_border="true"
+                app:cfl_border_width="5dp"
+                app:cfl_progress="100"
+                app:cfl_wave_amplitude="0.06"
+                app:cfl_wave_color="@color/colorPrimary" />
+
+            <SeekBar
+                android:id="@+id/seekBarCProgressDialogwithImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/border"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/border"
+                android:layout_below="@+id/shape"
+                android:layout_toEndOf="@+id/border"
+                android:layout_toRightOf="@+id/border"
+                android:max="100"
+                android:progress="0" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

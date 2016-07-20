@@ -9,7 +9,6 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -24,4 +23,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
     compile 'com.android.support:design:24.1.0'
+
+// Third Party Libs
+    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    compile 'com.mikhaellopez:circularfillableloaders:1.2.0'
 }

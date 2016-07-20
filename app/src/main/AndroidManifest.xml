@@ -17,5 +17,4 @@
         </activity>
         <activity android:name=".CircularProgressButton"></activity>
     </application>
-
 </manifest>

@@ -15,6 +15,7 @@
         android:padding="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+
         <Button
             android:id="@+id/buttonSimpleToast"
             android:layout_width="fill_parent"

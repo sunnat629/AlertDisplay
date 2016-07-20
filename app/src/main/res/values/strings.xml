@@ -5,7 +5,6 @@
     <string name="snackbar_action_call_back">Snackbar with Action Callback</string>
     <string name="snackbar_custom_action_call_back">Snackbar with Custom A.C.</string>
 
-
     <string name="circular_progress">Circular Progress Bar</string>
     <string name="circular_progress_alert">Circular Progress Bar Alert</string>
 </resources>

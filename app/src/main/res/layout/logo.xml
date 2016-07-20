@@ -17,5 +17,4 @@
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
         android:src="@drawable/mylogo" />
-
 </android.support.design.widget.AppBarLayout>

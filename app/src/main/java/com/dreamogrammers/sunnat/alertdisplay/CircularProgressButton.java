@@ -60,6 +60,7 @@ public class CircularProgressButton extends AppCompatActivity {
 
     }
 
+
     public void showProgressDialog(View view) {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Click outside of this display to exit.");

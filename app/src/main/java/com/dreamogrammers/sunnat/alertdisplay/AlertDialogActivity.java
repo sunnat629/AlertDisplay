@@ -131,6 +131,9 @@ public class AlertDialogActivity extends AppCompatActivity {
         alertDialogObject.show();
     }
 
+    /**
+     * This is an alert dialog with Multiple Choice to select an array of String.
+     */
     public void showAlertDialogWithMultipleChoice(View view) {
 
         final List<String> mSelectedItems = new ArrayList();  // Where we track the selected items
@@ -178,7 +181,10 @@ public class AlertDialogActivity extends AppCompatActivity {
     }
 
 
-    // Listview is better than this Radio Button
+    /**
+     * This is an alert dialog with a Radio Button to select a String from the list.
+     * Listview is better than this Radio Button
+     */
     public void showAlertDialogWithRadioButton(View view){
 
         final String[] citiesArr = getResources().getStringArray(cities);

@@ -7,4 +7,18 @@
 
     <string name="circular_progress">Circular Progress Bar</string>
     <string name="circular_progress_alert">Circular Progress Bar Alert</string>
+
+    <string name="alert_dialog">Alert Dialogs</string>
+
+    <array name="cities">
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Dhaka</item>
+        <item>Feni</item>
+        <item>Khulna</item>
+        <item>Pabna</item>
+        <item>Rajshahi</item>
+        <item>Sylhet</item>
+        <item>Tangail</item>
+    </array>
 </resources>

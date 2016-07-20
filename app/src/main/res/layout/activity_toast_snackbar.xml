@@ -5,11 +5,11 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dreamogrammers.sunnat.alertdisplay.MainActivity">
+    tools:context="com.dreamogrammers.sunnat.alertdisplay.ToastSnackbarActivity">
 
     <include layout="@layout/logo" />
 
-    <include layout="@layout/main_scrolling" />
+    <include layout="@layout/tsb_scrolling" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingactionbutton"

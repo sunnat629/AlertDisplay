@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context=".ToastSnackbarActivity"
+    tools:showIn="@layout/activity_first">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -17,36 +17,13 @@
 
 
         <Button
-            android:id="@+id/buttonSimpleToast"
+            android:id="@+id/buttonToastSnack"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/toast"
+            android:text="Toast and Snack Bar"
             android:theme="@style/MyButton" />
 
-        <Button
-            android:id="@+id/buttonSimpleSnackbar"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/simple_snackbar"
-            android:theme="@style/MyButton" />
-
-        <Button
-            android:id="@+id/buttonActionCallback"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/snackbar_action_call_back"
-            android:theme="@style/MyButton" />
-
-        <Button
-            android:id="@+id/buttonCustomSnackbar"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/snackbar_custom_action_call_back"
-            android:theme="@style/MyButton" />
 
         <Button
             android:id="@+id/buttonCircularProgress"
@@ -55,6 +32,16 @@
             android:layout_marginTop="5dp"
             android:text="@string/circular_progress"
             android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/buttonAlertDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/alert_dialog"
+            android:theme="@style/MyButton" />
+
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

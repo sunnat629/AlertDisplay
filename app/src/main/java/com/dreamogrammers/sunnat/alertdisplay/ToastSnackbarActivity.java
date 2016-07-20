@@ -12,18 +12,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.dreamogrammers.sunnat.alertdisplay.R.id.buttonCircularProgress;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class ToastSnackbarActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button buttonSimpleToast, buttonSimpleSnackbar, buttonActionCallback, buttonCustomSnackbar,buttonCircularProgress;
+    private Button buttonSimpleToast, buttonSimpleSnackbar, buttonActionCallback, buttonCustomSnackbar;
     private CoordinatorLayout coordinatorLayout;
     FloatingActionButton floatingactionbutton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_toast_snackbar);
         initializationForLayout();
 
         buttonSimpleToast.setOnClickListener(this);
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonActionCallback.setOnClickListener(this);
         buttonCustomSnackbar.setOnClickListener(this);
         floatingactionbutton.setOnClickListener(this);
-        buttonCircularProgress.setOnClickListener(this);
     }
 
     private void initializationForLayout() {
@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonSimpleSnackbar = (Button) findViewById(R.id.buttonSimpleSnackbar);
         buttonCustomSnackbar = (Button) findViewById(R.id.buttonCustomSnackbar);
         buttonActionCallback = (Button) findViewById(R.id.buttonActionCallback);
-        buttonCircularProgress = (Button) findViewById(R.id.buttonCircularProgress);
         // This is the Floating Action Button
         floatingactionbutton = (FloatingActionButton) findViewById(R.id.floatingactionbutton);
     }
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textView.setTextColor(Color.YELLOW);
                 CustomSnackbar.show();
                 break;
-            case R.id.buttonCircularProgress:
+            case buttonCircularProgress:
                 Intent goToCircularProgressButton = new Intent(this, CircularProgressButton.class);
                 startActivity(goToCircularProgressButton);
                 break;

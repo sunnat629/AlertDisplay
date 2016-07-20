@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ToastSnackbarActivity"
+    tools:showIn="@layout/activity_toast_snackbar">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <Button
+            android:id="@+id/buttonSimpleToast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/toast"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/buttonSimpleSnackbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/simple_snackbar"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/buttonActionCallback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/snackbar_action_call_back"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/buttonCustomSnackbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/snackbar_custom_action_call_back"
+            android:theme="@style/MyButton" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
